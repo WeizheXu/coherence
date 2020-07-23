@@ -1,5 +1,7 @@
-
-## 1. Prepare conda environment:
+## 1. File preparation:
+1. Clone this directory.
+2. Download pre-trained vectors from https://fasttext.cc/docs/en/english-vectors.html
+## 2. Prepare conda environment:
 1. Create environment: `conda create -n coherence python=3.7`
 2. Activate environment: `conda activate coherence`
 3. Install dependencies: 
@@ -12,7 +14,7 @@
    * scikitlearn: `conda install -c anaconda scikit-learn`
    * gensim: `conda install gensim`
    * networkx: `conda install networkx`
-## 2. Run the python file:
+## 3. Run the python file:
 1. Go to eitri: `cd /edata/coherencenotebook`
 2. Find the data directory where the txt files are stored. We'll call it data_dir.
 3. Execute file: `python3 coherence.py -p './data_dir/'`
@@ -21,7 +23,7 @@
 5. If you want to save it to somewhere else, use -s directory.
 e.g. `python3 coherence.py -p './data_dir/' -s '~/coherenceresult.csv'`
 (Please also specify the filename in the end as the example shows)
-## 3. Interprete the results:
+## 4. Interprete the results:
 <p>This csv results contains several metrics of the coherence of the input text files. Some of them are based on 
 word embedding vectors and some of them are based on graph analysis. Below is a short description of the meaning of 
 the column names you get from the csv.</p>
