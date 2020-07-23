@@ -15,8 +15,6 @@
    * gensim: `conda install gensim`
    * networkx: `conda install networkx`
 ## 3. Run the python file:
-1. Go to eitri: `cd /edata/coherencenotebook`
-2. Find the data directory where the txt files are stored. We'll call it data_dir.
 3. Execute file: `python3 coherence.py -p './data_dir/'`
 (Please don't forget the '/' in the end)
 4. The result will be saved as coherenceresult.csv in current directory.
