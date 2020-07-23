@@ -16,6 +16,7 @@
    * networkx: `conda install networkx`
    * multiprocess: `conda install -c conda-forge multiprocess`
    * numba: `conda install numba`
+   * spacy: `conda install -c conda-forge spacy`
 ## 3. Run the python file:
 1. Execute file: `python3 coherence.py -p './data_dir/'`
 (Please don't forget the '/' in the end)
