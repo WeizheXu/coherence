@@ -15,6 +15,7 @@
    * gensim: `conda install gensim`
    * networkx: `conda install networkx`
    * multiprocess: `conda install -c conda-forge multiprocess`
+   * numba: `conda install numba`
 ## 3. Run the python file:
 1. Execute file: `python3 coherence.py -p './data_dir/'`
 (Please don't forget the '/' in the end)
