@@ -15,13 +15,13 @@
    * gensim: `conda install gensim`
    * networkx: `conda install networkx`
 ## 3. Run the python file:
-3. Execute file: `python3 coherence.py -p './data_dir/'`
+1. Execute file: `python3 coherence.py -p './data_dir/'`
 (Please don't forget the '/' in the end)
-4. The result will be saved as coherenceresult.csv in current directory.
-5. If you want to save it to somewhere else, use -s directory.
+2. The result will be saved as coherenceresult.csv in current directory.
+3. If you want to save it to somewhere else, use -s directory.
 e.g. `python3 coherence.py -p './data_dir/' -s '~/coherenceresult.csv'`
 (Please also specify the filename in the end as the example shows)
-6. Use '-f' tag to specify aggregation function used to summarize the coherence of a document.
+4. Use '-f' tag to specify aggregation function used to summarize the coherence of a document.
 The available options are 'min' 'mean' 'max' and 'median'. e.g. -f mean. Default is min. 
 ## 4. Interprete the results:
 <p>This csv results contains several metrics of the coherence of the input text files. Some of them are based on 
