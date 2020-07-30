@@ -2,6 +2,7 @@
 1. Clone this directory.
 2. Download pre-trained vectors from https://fasttext.cc/docs/en/english-vectors.html
 3. Download IDF data file from https://drive.google.com/file/d/1Xw2wyx6P8yit--FxB7a2NwmFXLPxJaIT/view?usp=sharing
+4. Download semvecpy package to load semantic vectors. `git clone https://github.com/semanticvectors/semvecpy.git`
 ## 2. Prepare conda environment:
 1. Create environment: `conda create -n coherence python=3.7`
 2. Activate environment: `conda activate coherence`
