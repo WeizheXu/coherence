@@ -59,5 +59,6 @@ the column names you get from the csv.</p>
 
 1. Mota NB, Vasconcelos NAP, Lemos N, Pieretti AC, Kinouchi O, Cecchi GA, et al. (2012) Speech Graphs Provide a Quantitative Measure of Thought Disorder in Psychosis. PLoS ONE 7(4): e34928. https://doi.org/10.1371/journal.pone.0034928 Github page: https://github.com/guillermodoghel/speechgraph
 2. Semvecpy software package. Github page: https://github.com/semanticvectors/semvecpy
+3. Fasttext software package. Url:https://fasttext.cc/docs/en/english-vectors.html
 
 
