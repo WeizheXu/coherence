@@ -54,6 +54,9 @@ the column names you get from the csv.</p>
    <p>These measures are based on putting the words on a graph data structure and analyze the property of the graph. 
    These measures should all start with 'normal' as I normalized them to a number between 0-1 so it can be compared to previous
    measures.</p>
+## 5. Citation:
 
+1. Mota NB, Vasconcelos NAP, Lemos N, Pieretti AC, Kinouchi O, Cecchi GA, et al. (2012) Speech Graphs Provide a Quantitative Measure of Thought Disorder in Psychosis. PLoS ONE 7(4): e34928. https://doi.org/10.1371/journal.pone.0034928 Github page: https://github.com/guillermodoghel/speechgraph
+2. Semvecpy software package. Github page: https://github.com/semanticvectors/semvecpy
 
 
