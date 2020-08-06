@@ -614,9 +614,23 @@ def main():
                 aggreFunc = np.max
             else:
                 aggreFunc = np.min
+        if arg == '-v':
+            if index + 1 >= len(sys.argv):
+                print('Please specify vectors after -v. If not, the default fasttext vectors trained from common crawl without subword')
+                aggreFunc = np.min
+                return
+            elif str(sys.argv[index+1]).startswith('-'):
+                print('Please specify vectors after -v. If not, the default fasttext vectors trained from common crawl without subword')
+                aggreFunc = np.min
+                return
+            else:
+                vecs = str(sys.argv[index+1])
     if '-f' not in sys.argv:
         print('Aggregation function is set to default: minimum')
         aggreFunc = np.min
+    if '-v' not in sys.argv:
+        print('Vector is set to default: fasttext_vectors.bin')
+        vecs = 'fasttext_vectors.bin'
 
 
     try:
@@ -630,7 +644,7 @@ def main():
     idf_dict = idf.set_index('token')['idf'].to_dict()
     freq_dict = idf.set_index('token')['frequency'].to_dict()
     #fastext = generatetable('crawl-300d-2M-subword.vec', textData, freq_dict, idf_dict)
-    fastext = generatetable('fasttext_vectors.bin', textData, freq_dict, idf_dict, aggreFunc)
+    fastext = generatetable(vecs, textData, freq_dict, idf_dict, aggreFunc)
     #fastext = fastext.dropna()
     print('Result preview:')
     print(fastext.head())
